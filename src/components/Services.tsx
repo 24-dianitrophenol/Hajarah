@@ -64,7 +64,7 @@ const Services = () => {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://wa.me/1234567890"
+                    href="https://wa.me/256755504221"
                     className="flex-1 bg-green-500 text-white py-2 px-4 rounded-lg flex items-center justify-center space-x-2 hover:bg-green-600 transition-colors"
                   >
                     <MessageCircle className="h-5 w-5" />
@@ -74,7 +74,7 @@ const Services = () => {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="tel:+1234567890"
+                    href="tel:+256755504221"
                     className="flex-1 bg-pink-500 text-white py-2 px-4 rounded-lg flex items-center justify-center space-x-2 hover:bg-pink-600 transition-colors"
                   >
                     <Phone className="h-5 w-5" />
