@@ -1,22 +1,24 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Phone, MessageCircle } from 'lucide-react';
+import image1 from '../assets/images/2.jpg';
+import image2 from '../assets/images/p1.jpg';
+import image3 from '../assets/images/h3.jpg';
 
 const services = [
   {
     title: "Bridal Makeup",
     description: "Complete bridal makeup package including trials and touch-ups",
-    image: "/src/assets/images/2.jpg",
+    image: image1,
   },
   {
     title: "Traditional Henna",
     description: "Intricate henna designs for special occasions",
-    image: "/src/assets/images/p1.jpg",
+    image: image2,
   },
   {
     title: "Party Makeup",
     description: "Glamorous makeup for any special event",
-    image: "/src/assets/images/h3.jpg",
+    image: image3,
   }
 ];
 

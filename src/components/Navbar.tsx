@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Search, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import navImage from '../assets/images/logo_2.png';
 
 const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -36,13 +37,13 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-16">
             <motion.div 
               className="flex-shrink-0 flex items-center"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              whileHover={{ scale: 1.5 }}
+              transition={{ type: "spring", stiffness: 200 }}
             >
               <img
-                className="h-12 w-auto"
-                src="/src/assets/logo.svg"
-                alt="Beauty Arts"
+              className="h-16 w-auto"
+              src={navImage}
+              alt="Beauty Arts"
               />
             </motion.div>
 

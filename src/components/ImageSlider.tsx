@@ -1,17 +1,20 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import ImageSloder_1 from '../assets/images/2.jpg';
+import ImageSloder_2 from '../assets/images/p1.jpg';
+import ImageSloder_3 from '../assets/images/h3.jpg';
 
 const images = [
   {
-    url: "/src/assets/images/2.jpg",
+    url: ImageSloder_1,
     title: "Bridal Makeup"
   },
   {
-    url: "/src/assets/images/p1.jpg",
+    url: ImageSloder_2,
     title: "Traditional Henna"
   },
   {
-    url: "/src/assets/images/h3.jpg",
+    url: ImageSloder_3,
     title: "Party Makeup"
   }
 ];

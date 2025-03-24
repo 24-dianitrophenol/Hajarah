@@ -1,21 +1,22 @@
 import { Instagram, Phone, Mail, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import footerImage from '../assets/images/logo_2.png';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <motion.div
+            <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="col-span-2"
-          >
+            >
             <img
-              src="/src/assets/logo-white.svg"
+              src={footerImage}
               alt="Hajarah Makeup"
-              className="h-12 w-auto mb-4"
+              className="h-16 w-auto mb-4"
             />
             <p className="text-gray-400 mb-4">
               Transform your beauty with our professional makeup and henna services.
@@ -35,12 +36,12 @@ const Footer = () => {
               className="flex items-center justify-center h-10 w-10 rounded-full bg-pink-500 text-white hover:bg-pink-400 transition-colors"
               >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="h-6 w-6"
               >
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.5 13.5c-.28 0-.5-.22-.5-.5v-2.5c0-.28.22-.5.5-.5h1.5v-2h-1.5c-.28 0-.5-.22-.5-.5V8c0-.28.22-.5.5-.5h2c.28 0 .5.22.5.5v6c0 .28-.22.5-.5.5h-2zm-5.5 0c-.28 0-.5-.22-.5-.5v-6c0-.28.22-.5.5-.5h2c.28 0 .5.22.5.5v6c0 .28-.22.5-.5.5h-2zm-5.5 0c-.28 0-.5-.22-.5-.5v-6c0-.28.22-.5.5-.5h2c.28 0 .5.22.5.5v6c0 .28-.22.5-.5.5h-2z" />
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.5 13.5c-.28 0-.5-.22-.5-.5v-2.5c0-.28.22-.5.5-.5h1.5v-2h-1.5c-.28 0-.5-.22-.5-.5V8c0-.28.22-.5.5-.5h2c.28 0 .5.22.5.5v6c0 .28-.22.5-.5.5h-2zm-5.5 0c-.28 0-.5-.22-.5-.5v-6c0-.28.22-.5.5-.5h2c.28 0 .5.22.5.5v6c0 .28-.22.5-.5.5h-2zm-5.5 0c-.28 0-.5-.22-.5-.5v-6c0-.28.22-.5.5-.5h2c.28 0 .5.22.5.5v6c0 .28-.22.5-.5.5h-2z" />
               </svg>
               </motion.a>
               <motion.a
@@ -51,7 +52,7 @@ const Footer = () => {
               <Mail className="h-6 w-6" />
               </motion.a>
             </motion.div>
-          </motion.div>
+            </motion.div>
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
