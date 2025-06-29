@@ -1,29 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import ImageSlider from './components/ImageSlider';
+import Catalog from './components/Catalog';
 import Services from './components/Services';
-import Gallery from './components/Gallery';
+import Adverts from './components/Adverts';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import SplashScreen from './components/SplashScreen';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('home');
+  const [showSplash, setShowSplash] = useState(true);
+
+  const handleSplashComplete = () => {
+    setShowSplash(false);
+  };
+
+  const renderContent = () => {
+    switch (activeSection) {
+      case 'home':
+        return <Hero />;
+      case 'catalog':
+        return <Catalog />;
+      case 'services':
+        return <Services />;
+      case 'adverts':
+        return <Adverts />;
+      case 'about':
+        return <About />;
+      case 'contact':
+        return <Contact />;
+      default:
+        return <Hero />;
+    }
+  };
+
+  // Show splash screen first
+  if (showSplash) {
+    return <SplashScreen onComplete={handleSplashComplete} />;
+  }
+
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Trending Designs</h2>
-          <ImageSlider />
-        </div>
-      </section>
-      <Services />
-      <Gallery />
-      <About />
-      <Contact />
+    <div className="min-h-screen bg-gray-50">
+      <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
+      <div className="pt-20">
+        {renderContent()}
+      </div>
       <Footer />
       <ScrollToTop />
     </div>

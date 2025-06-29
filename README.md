@@ -1,1 +1,0 @@
-Beauty blossoms in the delicate art of henna, the vibrant hues of natural hair color, and the transformative touch of makeup. These elements intertwine, offering a canvas for personal expression and celebration of individuality.
