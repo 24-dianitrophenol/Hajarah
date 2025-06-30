@@ -9,7 +9,7 @@ const catalogItems = [
     id: 1,
     title: 'Elegant Bridal Look',
     category: 'Bridal',
-    image: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'images/bridal 1.jpg',
     featured: true,
     new: false,
     rating: 4.9,
@@ -19,7 +19,7 @@ const catalogItems = [
     id: 2,
     title: 'Intricate Henna Design',
     category: 'Henna',
-    image: 'https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'images/h1.jpg',
     featured: true,
     new: true,
     rating: 4.8,
@@ -29,7 +29,7 @@ const catalogItems = [
     id: 3,
     title: 'Glamorous Party Makeup',
     category: 'Party',
-    image: 'https://images.unsplash.com/photo-1562088287-bde35a1ea917?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'images/bridal 2.jpg',
     featured: false,
     new: true,
     rating: 4.7,
@@ -39,7 +39,7 @@ const catalogItems = [
     id: 4,
     title: 'Natural Glow Makeup',
     category: 'Party',
-    image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'images/bridal 3.jpg',
     featured: false,
     new: false,
     rating: 4.6,
@@ -49,7 +49,7 @@ const catalogItems = [
     id: 5,
     title: 'Traditional Cultural Look',
     category: 'Traditional',
-    image: 'https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'images/3.jpg',
     featured: true,
     new: false,
     rating: 4.8,
@@ -59,7 +59,7 @@ const catalogItems = [
     id: 6,
     title: 'Modern Bridal Style',
     category: 'Bridal',
-    image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'images/2.jpg',
     featured: true,
     new: true,
     rating: 4.9,
@@ -69,11 +69,21 @@ const catalogItems = [
     id: 7,
     title: 'Festive Celebration Look',
     category: 'Traditional',
-    image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'images/1.jpg',
     featured: false,
     new: false,
     rating: 4.7,
     description: 'Perfect for cultural celebrations and festivals'
+  },
+  {
+    id: 8,
+    title: 'Artistic Henna Patterns',
+    category: 'Henna',
+    image: 'images/h3.jpg',
+    featured: false,
+    new: true,
+    rating: 4.8,
+    description: 'Creative and detailed henna artistry'
   }
 ];
 
@@ -161,9 +171,10 @@ const Catalog = () => {
           ))}
         </motion.div>
 
+        {/* Responsive Grid - 2 columns on mobile, 3 on desktop */}
         <motion.div 
           layout
-          className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          className="grid gap-6 grid-cols-2 lg:grid-cols-3"
         >
           <AnimatePresence>
             {filteredItems.map((item, index) => (
@@ -177,93 +188,96 @@ const Catalog = () => {
                 className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-pink-200"
               >
                 <div className="relative overflow-hidden">
-                  <motion.img
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.6 }}
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-80 object-cover"
-                  />
+                  {/* Square aspect ratio for mobile, maintain original for desktop */}
+                  <div className="aspect-square lg:aspect-[4/5]">
+                    <motion.img
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.6 }}
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   
                   {/* Badges */}
-                  <div className="absolute top-4 left-4 flex flex-col space-y-2">
+                  <div className="absolute top-3 left-3 flex flex-col space-y-1">
                     {item.new && (
-                      <span className="bg-gradient-to-r from-green-400 to-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      <span className="bg-gradient-to-r from-green-400 to-green-600 text-white px-2 py-1 rounded-full text-xs font-semibold">
                         New
                       </span>
                     )}
                     {item.featured && (
-                      <span className="bg-gradient-to-r from-pink-400 to-pink-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      <span className="bg-gradient-to-r from-pink-400 to-pink-600 text-white px-2 py-1 rounded-full text-xs font-semibold">
                         Featured
                       </span>
                     )}
                   </div>
 
                   {/* Rating Badge */}
-                  <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
-                    <Star className="h-4 w-4 text-yellow-400 fill-current" />
-                    <span className="text-sm font-semibold">{item.rating}</span>
+                  <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-sm rounded-full px-2 py-1 flex items-center space-x-1">
+                    <Star className="h-3 w-3 text-yellow-400 fill-current" />
+                    <span className="text-xs font-semibold">{item.rating}</span>
                   </div>
 
                   {/* Overlay Actions */}
                   <motion.div 
                     initial={{ opacity: 0 }}
                     whileHover={{ opacity: 1 }}
-                    className="absolute inset-0 bg-black/50 flex items-center justify-center space-x-4"
+                    className="absolute inset-0 bg-black/50 flex items-center justify-center space-x-3"
                   >
                     <motion.button
                       whileHover={{ scale: 1.1 }}
-                      className="bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors"
+                      className="bg-white/20 backdrop-blur-sm text-white p-2 rounded-full hover:bg-white/30 transition-colors"
                     >
-                      <Eye className="h-5 w-5" />
+                      <Eye className="h-4 w-4" />
                     </motion.button>
                     <motion.button
                       whileHover={{ scale: 1.1 }}
-                      className="bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors"
+                      className="bg-white/20 backdrop-blur-sm text-white p-2 rounded-full hover:bg-white/30 transition-colors"
                     >
-                      <Heart className="h-5 w-5" />
+                      <Heart className="h-4 w-4" />
                     </motion.button>
                     <motion.button
                       whileHover={{ scale: 1.1 }}
-                      className="bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors"
+                      className="bg-white/20 backdrop-blur-sm text-white p-2 rounded-full hover:bg-white/30 transition-colors"
                     >
-                      <Share2 className="h-5 w-5" />
+                      <Share2 className="h-4 w-4" />
                     </motion.button>
                   </motion.div>
                 </div>
                 
-                <div className="p-6">
-                  <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-xl font-bold text-gray-800 group-hover:text-green-600 transition-colors">
+                <div className="p-4">
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-lg font-bold text-gray-800 group-hover:text-green-600 transition-colors line-clamp-1">
                       {item.title}
                     </h3>
                   </div>
-                  <p className="text-gray-600 mb-4">{item.description}</p>
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="text-sm text-green-600 font-semibold bg-green-50 px-3 py-1 rounded-full">
+                  <p className="text-gray-600 mb-3 text-sm line-clamp-2">{item.description}</p>
+                  <div className="flex justify-between items-center mb-3">
+                    <span className="text-xs text-green-600 font-semibold bg-green-50 px-2 py-1 rounded-full">
                       {item.category}
                     </span>
                   </div>
                   
-                  {/* Action Buttons */}
-                  <div className="flex space-x-3">
+                  {/* Action Buttons - Stacked on mobile */}
+                  <div className="flex flex-col space-y-2 lg:flex-row lg:space-y-0 lg:space-x-2">
                     <motion.button
                       onClick={() => handleBookNow(item)}
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="flex-1 bg-gradient-to-r from-pink-400 to-pink-600 text-white px-4 py-3 rounded-xl font-semibold hover:from-pink-500 hover:to-pink-700 transition-colors flex items-center justify-center space-x-2"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="flex-1 bg-gradient-to-r from-pink-400 to-pink-600 text-white px-3 py-2 rounded-lg font-semibold hover:from-pink-500 hover:to-pink-700 transition-colors flex items-center justify-center space-x-1 text-sm"
                     >
-                      <MessageCircle className="h-4 w-4" />
-                      <span>Book Now</span>
+                      <MessageCircle className="h-3 w-3" />
+                      <span>Book</span>
                     </motion.button>
                     
                     <motion.button
                       onClick={handleCall}
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="flex-1 bg-gradient-to-r from-green-400 to-green-600 text-white px-4 py-3 rounded-xl font-semibold hover:from-green-500 hover:to-green-700 transition-colors flex items-center justify-center space-x-2"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="flex-1 bg-gradient-to-r from-green-400 to-green-600 text-white px-3 py-2 rounded-lg font-semibold hover:from-green-500 hover:to-green-700 transition-colors flex items-center justify-center space-x-1 text-sm"
                     >
-                      <Phone className="h-4 w-4" />
+                      <Phone className="h-3 w-3" />
                       <span>Call</span>
                     </motion.button>
                   </div>

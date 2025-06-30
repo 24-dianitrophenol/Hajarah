@@ -6,15 +6,15 @@ const services = [
   {
     title: "Premium Bridal Package",
     description: "Complete bridal transformation including makeup trial, wedding day makeup, hair styling, and touch-up kit",
-    image: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "images/2.jpg",
     duration: "6-8 hours",
     rating: 4.9,
     features: ["Makeup Trial", "Wedding Day Service", "Hair Styling", "Touch-up Kit", "Photography Ready"]
   },
   {
-    title: "Traditional Henna Artistry",
+    title: "Modern Henna Artistry",
     description: "Intricate henna designs ranging from simple patterns to elaborate bridal mehndi with natural, premium quality henna",
-    image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "images/h3.jpg",
     duration: "2-4 hours",
     rating: 4.8,
     features: ["Premium Henna", "Custom Designs", "Aftercare Kit", "Design Consultation", "Quick Dry Formula"]
@@ -22,7 +22,7 @@ const services = [
   {
     title: "Glamour Party Makeup",
     description: "Bold and beautiful party-ready looks perfect for special events, photoshoots, and celebrations",
-    image: "https://images.unsplash.com/photo-1562088287-bde35a1ea917?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "images/bridal 3.jpg",
     duration: "2-3 hours",
     rating: 4.7,
     features: ["Event Makeup", "False Lashes", "Contouring", "Long-lasting Formula", "Photo Ready"]

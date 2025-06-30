@@ -41,14 +41,9 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            About <span className="text-green-600">Beauty Arts</span>
+            About <span className="text-green-600">Us</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-green-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Beauty Arts has been the premier destination for brides and beauty enthusiasts, 
-            representing more than just a business - it's a passion project born from a deep love for fashion, 
-            culture, and the magic of special moments.
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
@@ -59,8 +54,8 @@ const About = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-pink-200">
               <img
-                src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Beauty Arts Founder"
+                src="images/2.jpg"
+                alt="Hjarah's Makeup and Henna Founder"
                 className="w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
@@ -77,12 +72,12 @@ const About = () => {
             className="flex flex-col justify-center"
           >
             <h3 className="text-3xl font-bold mb-6">
-              Meet <span className="text-green-600">Our Story</span>
+              View <span className="text-green-600">Our Story</span>
             </h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Founded with a vision to celebrate beauty in all its forms, Beauty Arts represents more than just 
+              Founded with a vision to celebrate beauty in all its forms, Hajarah represents more than just 
               a business - it's a passion project born from a deep love for fashion, culture, and the magic of 
-              special moments. With over a decade of experience in the fashion industry, we recognized the need 
+              special moments. With over 10-years of experience in the fashion industry, we recognized the need 
               for a space that truly understands the significance of weddings and traditional ceremonies.
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
@@ -122,7 +117,7 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           className="bg-white rounded-2xl p-8 shadow-lg mb-16 border-2 border-pink-100"
         >
-          <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">Why Choose Beauty Arts?</h3>
+          <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">Why Choose Hajarah?</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {achievements.map((achievement, index) => (
               <motion.div

@@ -13,31 +13,31 @@ const Hero = () => {
   const galleryImages = [
     {
       id: 1,
-      url: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+      url: 'images/3.jpg',
       title: 'Elegant Bridal Makeup',
       category: 'Bridal'
     },
     {
       id: 2,
-      url: 'https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+      url: 'images/h3.jpg',
       title: 'Traditional Henna Art',
       category: 'Henna'
     },
     {
       id: 3,
-      url: 'https://images.unsplash.com/photo-1562088287-bde35a1ea917?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+      url: 'images/h2.jpg',
       title: 'Glamorous Party Look',
       category: 'Party'
     },
     {
       id: 4,
-      url: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+      url: 'images/bridal 2.jpg',
       title: 'Natural Beauty Enhancement',
       category: 'Natural'
     },
     {
       id: 5,
-      url: 'https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+      url: 'images/bridal 3.jpg',
       title: 'Cultural Traditional Style',
       category: 'Traditional'
     }
@@ -71,7 +71,7 @@ const Hero = () => {
       icon: Sparkles,
       title: 'Bridal Makeup',
       description: 'Complete bridal transformation with trial sessions',
-      image: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80',
+      image: 'images/2.jpg',
       fullDescription: 'Our premium bridal makeup service is designed to make your wedding day absolutely perfect. We understand that your wedding is one of the most important days of your life, and we are committed to creating a look that reflects your unique style while enhancing your natural beauty. Our experienced artists use only the finest, long-lasting products to ensure you look flawless from the ceremony through the reception.',
       duration: '6-8 hours',
       price: 'From $200',
@@ -94,9 +94,9 @@ const Hero = () => {
         'Provision of touch-up kit for the reception'
       ],
       gallery: [
-        'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-        'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-        'https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+        'images/2.jpg',
+        'images/bridal 2.jpg',
+        'images/bridal 3.jpg'
       ],
       testimonial: {
         text: 'Beauty Arts made my wedding day absolutely magical! The makeup was flawless and lasted all day. I felt like a princess!',
@@ -108,7 +108,7 @@ const Hero = () => {
       icon: Heart,
       title: 'Henna Artistry',
       description: 'Traditional and modern henna designs',
-      image: 'https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80',
+      image: 'images/h1.jpg',
       fullDescription: 'Experience the ancient art of henna with our skilled artists who create intricate, beautiful designs that celebrate tradition while embracing modern aesthetics. We use only premium, natural henna paste that creates rich, long-lasting stains. Whether you prefer traditional patterns or contemporary designs, we customize each piece to reflect your personal style and the significance of your special occasion.',
       duration: '2-4 hours',
       price: 'From $50',
@@ -131,9 +131,9 @@ const Hero = () => {
         'Aftercare instructions and tips'
       ],
       gallery: [
-        'https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-        'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-        'https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+        'images/h3.jpg',
+        'images/1.jpg',
+        'images/h2.jpg'
       ],
       testimonial: {
         text: 'The henna designs were absolutely stunning! So intricate and beautiful. The color lasted for weeks and I received so many compliments.',
@@ -145,7 +145,7 @@ const Hero = () => {
       icon: Zap,
       title: 'Party Makeup',
       description: 'Glamorous looks for special occasions',
-      image: 'https://images.unsplash.com/photo-1562088287-bde35a1ea917?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80',
+      image: 'images/bridal 3.jpg',
       fullDescription: 'Transform yourself for any special occasion with our glamorous party makeup service. Whether it\'s a birthday celebration, anniversary, graduation, or any festive event, we create bold, beautiful looks that make you the center of attention. Our artists are skilled in creating everything from subtle elegance to dramatic glamour, ensuring you feel confident and stunning at your event.',
       duration: '2-3 hours',
       price: 'From $80',
@@ -168,9 +168,9 @@ const Hero = () => {
         'Touch-up tips and product recommendations'
       ],
       gallery: [
-        'https://images.unsplash.com/photo-1562088287-bde35a1ea917?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-        'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-        'https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80'
+        'images/bridal 1.jpg',
+        'images/bridal 2.jpg',
+        'images/bridal 3.jpg'
       ],
       testimonial: {
         text: 'I felt like a movie star! The makeup was perfect for my graduation party. Everyone kept asking who did my makeup!',
@@ -190,9 +190,15 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [galleryImages.length]);
 
-  const handleLearnMore = (service) => {
+  const handleLearnMore = (service: any) => {
     setSelectedService(service);
     setIsServiceModalOpen(true);
+  };
+
+  const handleWhatsAppBooking = () => {
+    const message = "Hi! I'm interested in booking a beauty service. Could you please provide more details about your services and availability?";
+    const whatsappUrl = `https://wa.me/256755504221?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
@@ -227,7 +233,7 @@ const Hero = () => {
             className="mb-8"
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-4">
-              Welcome to <span className="text-green-400">Beauty Arts</span>
+              Welcome to <span className="text-green-400">Hajarah</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               Transform your beauty with our professional makeup and henna services
@@ -251,15 +257,15 @@ const Hero = () => {
               <span>View Gallery</span>
             </motion.button>
             
-            <motion.a
-              href="https://wa.me/256755504221"
+            <motion.button
+              onClick={handleWhatsAppBooking}
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.95 }}
               className="bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center space-x-3 hover:bg-white/30 transition-all duration-300 shadow-lg border border-white/30"
             >
               <MessageCircle className="h-6 w-6" />
               <span>Book Us</span>
-            </motion.a>
+            </motion.button>
           </motion.div>
         </div>
 
@@ -345,7 +351,7 @@ const Hero = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
-                Why Choose <span className="text-green-600">Beauty Arts</span>
+                Why Choose <span className="text-green-600">Hajarah's</span>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-green-600 mx-auto"></div>
             </motion.div>
@@ -449,14 +455,14 @@ const Hero = () => {
                 Book your consultation today and let our expert team create the perfect look for your special occasion.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <motion.a
-                  href="https://wa.me/256755504221"
+                <motion.button
+                  onClick={handleWhatsAppBooking}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-gradient-to-r from-green-400 to-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-green-500 hover:to-green-700 transition-colors shadow-lg"
                 >
                   Book Consultation
-                </motion.a>
+                </motion.button>
                 <motion.button
                   onClick={() => setIsGalleryOpen(true)}
                   whileHover={{ scale: 1.05 }}

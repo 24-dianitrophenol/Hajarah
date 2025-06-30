@@ -34,7 +34,6 @@ const ScrollToTop = () => {
           exit={{ opacity: 0, scale: 0.5, y: 20 }}
           whileHover={{ 
             scale: 1.1, 
-            rotate: 360,
             boxShadow: "0 10px 25px rgba(34, 197, 94, 0.3)"
           }}
           whileTap={{ scale: 0.9 }}

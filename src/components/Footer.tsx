@@ -138,8 +138,7 @@ const Footer = () => {
               className="text-gray-400 text-sm flex items-center justify-center space-x-2 mb-4 md:mb-0"
             >
               <span>&copy; {new Date().getFullYear()} Hajarah's Makeup and Henna. All rights reserved.</span>
-              <Heart className="h-4 w-4 text-red-500 fill-current" />
-              <span>Made with love</span>
+
             </motion.p>
             <motion.div 
               initial={{ opacity: 0 }}
