@@ -21,56 +21,56 @@ const Gallery: React.FC<GalleryProps> = ({ isOpen, onClose }) => {
   const galleryImages = [
     {
       id: 1,
-      url: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+      url: 'images/bridal 1.jpg',
       title: 'Elegant Bridal Makeup',
       category: 'Bridal',
       description: 'Stunning bridal look with traditional elements'
     },
     {
       id: 2,
-      url: 'https://images.unsplash.com/photo-1583001931096-959e9a1a6223?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+      url: 'images/h3.jpg',
       title: 'Intricate Henna Design',
       category: 'Henna',
       description: 'Beautiful traditional henna patterns'
     },
     {
       id: 3,
-      url: 'https://images.unsplash.com/photo-1562088287-bde35a1ea917?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+      url: 'images/bridal 3.jpg',
       title: 'Glamorous Party Look',
       category: 'Party',
       description: 'Bold and beautiful party makeup'
     },
     {
       id: 4,
-      url: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+      url: 'images/bridal 2.jpg',
       title: 'Natural Beauty Enhancement',
       category: 'Party',
       description: 'Subtle and elegant natural look'
     },
     {
       id: 5,
-      url: 'https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+      url: 'images/3.jpg',
       title: 'Traditional Cultural Style',
       category: 'Traditional',
       description: 'Authentic traditional makeup'
     },
     {
       id: 6,
-      url: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+      url: 'images/2.jpg',
       title: 'Modern Bridal Style',
       category: 'Bridal',
       description: 'Contemporary bridal elegance'
     },
     {
       id: 7,
-      url: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+      url: 'images/3.jpg',
       title: 'Festive Celebration Look',
       category: 'Traditional',
       description: 'Perfect for cultural celebrations'
     },
     {
       id: 8,
-      url: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80',
+      url: 'images/h1.jpg',
       title: 'Artistic Henna Patterns',
       category: 'Henna',
       description: 'Creative and detailed henna art'
